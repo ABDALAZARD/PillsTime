@@ -3,7 +3,7 @@ import { StyleSheet, View, Text } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Inicio</Text>
+        <Text style={styles.title}>FlagApp</Text>
     </View>
   );
 }
@@ -17,7 +17,6 @@ const styles = StyleSheet.create({
   },
   title: {
     color: "#ffff",
-    
+    fontSize: 22,
   }
-
 });
