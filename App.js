@@ -2,7 +2,6 @@ import { StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import Title from './components/Title';
 import Inicio from './components/Inicio/index';
 import Rodadas from './components/Rodadas/index';
 import Settings from './components/Settings/index';
@@ -12,7 +11,6 @@ const Tab = createBottomTabNavigator();
 export default function App() {
   return (
     <NavigationContainer style={styles.container}>
-      <Title />
       <Tab.Navigator initialRouteName="Inicio">
         <Tab.Screen  name="Inicio"  style={styles.screenButton}
           component={Inicio} 

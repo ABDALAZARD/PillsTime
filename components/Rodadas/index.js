@@ -1,15 +1,18 @@
 import React from 'react';
-import { StyleSheet, View, Text, ScrollView, TouchableOpacity, FlatList } from 'react-native';
+import { StyleSheet, View, Text, TouchableOpacity, FlatList } from 'react-native';
+
+import Title from '../Title';
 
 export default function App() {
   return (
     <View style={styles.container}>
+      <Title />
       <View>
         <TouchableOpacity style={styles.button}>
           <Text style={styles.buttonText}>Criar desafio</Text>
         </TouchableOpacity>
       </View>
-      <Text style={styles.title}>Últimas rodadas Rodadas:</Text>
+      <Text style={styles.feedName}>Últimas rodadas Rodadas:</Text>
       <FlatList
         data={[
           {key: 'Teste A'},
@@ -29,7 +32,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  title: {
+  feedName: {
     color: '#fff',
     fontSize: 17,
     marginBottom: 30,
