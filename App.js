@@ -11,7 +11,7 @@ const Tab = createBottomTabNavigator();
 
 export default function App() {
   return (
-    <NavigationContainer>
+    <NavigationContainer style={styles.container}>
       <Title />
       <Tab.Navigator initialRouteName="Inicio">
         <Tab.Screen  name="Inicio"  style={styles.screenButton}
@@ -47,6 +47,12 @@ export default function App() {
 };
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#008000",
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   screenButton: {
     backgroundColor: "#008000",
     color: "#ffff",

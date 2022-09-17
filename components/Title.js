@@ -1,10 +1,11 @@
-import { StyleSheet, View, Text } from 'react-native';
+import React from 'react';
+import { StyleSheet, SafeAreaView, Text } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
         <Text style={styles.title}>FlagApp</Text>
-    </View>
+    </SafeAreaView>
   );
 }
 
@@ -14,6 +15,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#008000",
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 10,
   },
   title: {
     color: "#ffff",
