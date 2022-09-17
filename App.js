@@ -54,5 +54,6 @@ const styles = StyleSheet.create({
   screenButton: {
     backgroundColor: "#008000",
     color: "#ffff",
+    textAlign: 'center',
   }
 })
