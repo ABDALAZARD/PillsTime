@@ -1,21 +1,12 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { View, Text } from 'react-native';
+
+import styles from './style';
 
 export default function App() {
   return (
     <View>
-        <Text style={styles.title}>FlagApp</Text>
+        <Text style={styles.titleApp}>FlagApp</Text>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  title: {
-    color: "#006200",
-    fontSize: 22,
-    fontWeight: 'bold',
-    marginBottom: 10,
-    padding: 30,
-    marginTop: 20,
-  }
-});

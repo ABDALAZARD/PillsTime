@@ -2,6 +2,8 @@ import { StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
+import styles from './components/style';
+
 import Inicio from './components/Inicio/index';
 import Rodadas from './components/Rodadas/index';
 import Settings from './components/Settings/index';
@@ -43,17 +45,3 @@ export default function App() {
     </NavigationContainer>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#ffff",
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  screenButton: {
-    backgroundColor: "#006200",
-    color: "#ffff",
-    textAlign: 'center',
-  }
-})
