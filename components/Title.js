@@ -1,17 +1,17 @@
 import React from 'react';
-import { StyleSheet, SafeAreaView, Text } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 
 export default function App() {
   return (
-    <SafeAreaView>
+    <View>
         <Text style={styles.title}>FlagApp</Text>
-    </SafeAreaView>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   title: {
-    color: "#ffff",
+    color: "#006200",
     fontSize: 22,
     fontWeight: 'bold',
     marginBottom: 10,

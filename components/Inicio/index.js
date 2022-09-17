@@ -39,26 +39,26 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#008000",
+    backgroundColor: "#ffff",
     alignItems: 'center',
     justifyContent: 'center',
   },
   title: {
-    color: "#ffff",   
+    color: "#006200",   
   },
   card: {
     borderRadius: 20,
-    backgroundColor: "#36c73e"
+    backgroundColor: '#006200',
   },
   inputButtom: {
     borderRadius: 20,
     height: 40,
     width: 200,
     marginBottom: 40,
-    backgroundColor: "#007100",
-    color: 'white',
+    backgroundColor: '#ffff',
+    color: "#006200",
     margin: 10,
     textAlign: 'center',
-    textDecorationColor:"white"
   },
+  
 });

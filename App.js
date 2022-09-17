@@ -15,28 +15,28 @@ export default function App() {
         <Tab.Screen  name="Inicio"  style={styles.screenButton}
           component={Inicio} 
           options={{headerShown: false,
-          tabBarInactiveBackgroundColor:"#008000",
-          tabBarInactiveTintColor: "#fff",
-          tabBarActiveBackgroundColor:'#fff',
-          tabBarActiveTintColor: '#008000',
+          tabBarInactiveBackgroundColor:"#fff",
+          tabBarInactiveTintColor: "#006200",
+          tabBarActiveBackgroundColor:'#006200',
+          tabBarActiveTintColor: '#fff',
           }}
         />
         <Tab.Screen  name="Rodadas" style={styles.screenButton}
           component={Rodadas} 
           options={{headerShown: false,
-          tabBarInactiveBackgroundColor:"#008000",
-          tabBarInactiveTintColor: "white",
-          tabBarActiveBackgroundColor:'#fff',
-          tabBarActiveTintColor: '#008000',
+            tabBarInactiveBackgroundColor:"#fff",
+          tabBarInactiveTintColor: "#006200",
+          tabBarActiveBackgroundColor:'#006200',
+          tabBarActiveTintColor: '#fff',
           }}
         />
         <Tab.Screen  name="Settings" style={styles.screenButton}
           component={Settings} 
           options={{headerShown: false,
-          tabBarInactiveBackgroundColor:"#008000",
-          tabBarInactiveTintColor: "#fff",
-          tabBarActiveBackgroundColor:'#fff',
-          tabBarActiveTintColor: '#008000',
+          tabBarInactiveBackgroundColor:"#fff",
+          tabBarInactiveTintColor: "#006200",
+          tabBarActiveBackgroundColor:'#006200',
+          tabBarActiveTintColor: '#fff',
           }}
         />
       </Tab.Navigator>
@@ -47,12 +47,12 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#008000",
+    backgroundColor: "#ffff",
     alignItems: 'center',
     justifyContent: 'center',
   },
   screenButton: {
-    backgroundColor: "#008000",
+    backgroundColor: "#006200",
     color: "#ffff",
     textAlign: 'center',
   }

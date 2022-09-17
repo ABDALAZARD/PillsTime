@@ -28,17 +28,17 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#008000",
+    backgroundColor: "#ffff",
     alignItems: 'center',
     justifyContent: 'center',
   },
   feedName: {
-    color: '#fff',
+    color: '#006200',
     fontSize: 17,
     marginBottom: 30,
   },
   matches: {
-    color: "#ffff",
+    color: "#006200",
     margin: 30,
   },
   button: {
@@ -50,12 +50,12 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     textAlign: 'center',
-    color: '#fff',
+    color: '#006200',
     fontSize: 12,
     margin: 10,
   },
   item: {
-    color: 'white',
+    color: '#006200',
     fontSize: 10,
     margin: 20,
     marginBottom: 10,
