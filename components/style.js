@@ -18,8 +18,7 @@ const styles = StyleSheet.create({
   card: {
     backgroundColor: '#006200',
     borderRadius: 20,
-    height: 200,
-    width: 200,
+    padding: 20,
     justifyContent: 'center'
   },
   subTitle: {
@@ -33,21 +32,25 @@ const styles = StyleSheet.create({
 
   inputButtom: {
     backgroundColor: '#ffff',
+    height: 30,
+    width: 200,
     color: '#006200',
-    marginBottom: 30,
-    margin: 20,
+    marginTop: 10,
+    marginBottom: 10,
+    margin: 5,
     borderRadius: 20,
     textAlign: 'center',
   }, 
   button: {
     backgroundColor:'#006200',
     borderRadius:20,
-    marginBottom: 20,
+    marginBottom: 5,
+    marginTop: 10,
   },
   textButton: {
     color: 'white',
     textAlign:'center',
-    margin: 20,
+    margin: 10,
   },
   text: {
     color:'#006200',
