@@ -41,5 +41,9 @@ export default styles = StyleSheet.create({
     color: 'white',
     textAlign:'center',
     fontSize: 12,
+  },
+  title: {
+    color: 'white',
+    fontSize: 18,
   }
 });

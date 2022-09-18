@@ -4,8 +4,6 @@ import { View, Text, TextInput, TouchableOpacity } from 'react-native';
 import styles from './styles';
 
 export default function Login() {
-  const [email, setEmail] = useState('');
-  const [senha, setSenha] = useState('******');
 
   return (
     <View style={styles.container}>
@@ -23,7 +21,8 @@ export default function Login() {
           placeholderTextColor='#38A69D'
           style={styles.textInput}
         />
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button}
+        >
           <Text style={styles.textButton}>Logar</Text>
         </TouchableOpacity>
       </View>
