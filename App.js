@@ -1,47 +1,15 @@
-import { StyleSheet } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import React from 'react';
+import { SafeAreaView, StatusBar } from 'react-native';
 
-import styles from './components/style';
+import styles from './styles';
 
-import Inicio from './components/Inicio/index';
-import Rodadas from './components/Rodadas/index';
-import Settings from './components/Settings/index';
-
-const Tab = createBottomTabNavigator();
+import Login from './src/pages/Login'
 
 export default function App() {
   return (
-    <NavigationContainer style={styles.container}>
-      <Tab.Navigator initialRouteName="Inicio">
-        <Tab.Screen  name="Inicio"  style={styles.screenButton}
-          component={Inicio} 
-          options={{headerShown: false,
-          tabBarInactiveBackgroundColor:"#fff",
-          tabBarInactiveTintColor: "#006200",
-          tabBarActiveBackgroundColor:'#006200',
-          tabBarActiveTintColor: '#fff',
-          }}
-        />
-        <Tab.Screen  name="Rodadas" style={styles.screenButton}
-          component={Rodadas} 
-          options={{headerShown: false,
-            tabBarInactiveBackgroundColor:"#fff",
-          tabBarInactiveTintColor: "#006200",
-          tabBarActiveBackgroundColor:'#006200',
-          tabBarActiveTintColor: '#fff',
-          }}
-        />
-        <Tab.Screen  name="Settings" style={styles.screenButton}
-          component={Settings} 
-          options={{headerShown: false,
-          tabBarInactiveBackgroundColor:"#fff",
-          tabBarInactiveTintColor: "#006200",
-          tabBarActiveBackgroundColor:'#006200',
-          tabBarActiveTintColor: '#fff',
-          }}
-        />
-      </Tab.Navigator>
-    </NavigationContainer>
+    <SafeAreaView style={styles.container}>
+      <StatusBar backgroundColor="#38A69D" barStyle="light-content" /> 
+        <Login />
+    </SafeAreaView>
   );
 };
