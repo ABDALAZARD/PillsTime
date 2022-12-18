@@ -1,17 +1,32 @@
 import { React } from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import { View, TextInput, TouchableOpacity, Text } from 'react-native';
 
-import styles from './styles';
+import styles from './../../../styles';
+
+// function handleLoginButton() {
+
+// }
 
 export default function Login() {
   return (
     <View style={styles.container}>
       <View style={styles.card}>
-        <Text style={styles.textCard}>Login</Text>       
-        <TouchableOpacity style={styles.button}
-          onClick={handleLoginButton}>
+        <View>
+          <TextInput style={styles.textCard}
+            placeholder="Login"
+          />
+        </View>
+        <View>
+          <TextInput style={styles.textCard}
+            secureTextEntry
+            placeholder="Insira sua senha aqui" 
+          />
+        </View>
+        {/* <TouchableOpacity style={styles.button}
+          onClick={handleLoginButton}
+        >
           <Text style={styles.textButton}>Logar</Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
       </View>
     </View>
   );
