@@ -29,7 +29,7 @@ export default styles = StyleSheet.create({
     margin: 20,
   },
   textInput: {
-    textAlign:'center',
+    textAlign:'auto',
     marginTop: 10,
     marginLeft: 20,
     marginRight: 30,
