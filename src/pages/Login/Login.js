@@ -2,11 +2,10 @@ import React, { useState } from 'react';
 import { View, TextInput, TouchableOpacity, Text } from 'react-native';
 
 import api from "../../../service/api";
-
 import styles from '../../../styles';
 
 export function loginForm() {
-  const [email, setEmail] = useState('a');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleSubmit = async () => {
