@@ -4,24 +4,10 @@ import { View, TextInput, TouchableOpacity, Text } from 'react-native';
 import api from "../../../service/api";
 import styles from '../../../styles';
 
-export function loginForm() {
+export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSubmit = async () => {
-    try {
-      const response = await api.post('api/login', { email, password });
-      localStorage.setItem('token', response.data.token);
-      // redirecionar o usuário para a página principal aqui
-    } catch (e) {
-      console.error(e);
-      alert('Ocorreu um erro ao fazer login. Por favor, verifique seu email e senha e tente novamente.');
-    }
-  }
-
-};
-
-export default function Login() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>PillsTime</Text>
@@ -43,7 +29,25 @@ export default function Login() {
         />
       </View>
       <TouchableOpacity style={styles.button}
-        onPress={handleSubmit}>
+        onPress={() => {
+          fetch('http://pillstime-api.test/login', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              email: email,
+              password: password,
+            }),
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              console.log('Success:', data);
+            })
+            .catch((error) => {
+              console.error('Error:', error);
+            });
+        }}>
         <Text style={styles.textButton}>Logar</Text>
       </TouchableOpacity>   
     </View>
