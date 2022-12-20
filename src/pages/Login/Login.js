@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, TextInput, TouchableOpacity, Text } from 'react-native';
 
-import api from "../../../service/api";
+import api from "axios";
 import styles from '../../../styles';
 
 export default function Login() {
@@ -30,23 +30,16 @@ export default function Login() {
       </View>
       <TouchableOpacity style={styles.button}
         onPress={() => {
-          fetch('http://pillstime-api.test/login', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-              email: email,
-              password: password,
-            }),
+          api.post('http://pillstime-api.test/login', {
+            email: email,
+            password: password,
           })
-            .then((response) => response.json())
-            .then((data) => {
-              console.log('Success:', data);
-            })
-            .catch((error) => {
-              console.error('Error:', error);
-            });
+          .then((response) => {
+            console.log('Success:', response.data);
+          })
+          .catch((error) => {
+            console.error('Error:', error);
+          });
         }}>
         <Text style={styles.textButton}>Logar</Text>
       </TouchableOpacity>   
