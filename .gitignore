@@ -9,6 +9,7 @@ npm-debug.*
 *.mobileprovision
 *.orig.*
 web-build/
+github_token.txt
 
 # macOS
 .DS_Store
